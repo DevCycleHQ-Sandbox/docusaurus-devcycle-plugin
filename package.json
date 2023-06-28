@@ -1,0 +1,19 @@
+{
+    "name": "@devcycle/docusaurus-devcycle-plugin",
+    "version": "0.0.0-rc.6",
+    "description": "A plugin that easily integrates DevCycle feature flags with Docusaurus",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": "https://github.com/DevCycleHQ/docusaurus-devcycle-plugin",
+    "license": "MIT",
+    "author": "DevCycle",
+    "dependencies": {
+        "@devcycle/devcycle-react-sdk": "1.9.4",
+        "@devcycle/devcycle-js-sdk": "1.11.1"
+    },
+    "files": [
+        "src"
+    ]
+}
