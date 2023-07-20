@@ -1,5 +1,5 @@
 {
-    "name": "@devcycle/docusaurus-devcycle-plugin",
+    "name": "@devcycle/docusaurus-plugin",
     "version": "0.0.0-rc.6",
     "description": "A plugin that easily integrates DevCycle feature flags with Docusaurus",
     "main": "src/index.js",
