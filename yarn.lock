@@ -9,55 +9,49 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
-"@devcycle/devcycle-js-sdk@1.11.1":
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/@devcycle/devcycle-js-sdk/-/devcycle-js-sdk-1.11.1.tgz#6ef8f0999a9ee80123c02899623a465ceaa51f52"
-  integrity sha512-6g351I1A6KA4Ww7BvWXo959hOLmPtYgsrzFnjwkbGWHAhKtE/q+JDy+GrRcslh1CMKs65ItNcUHs/L4G4PulhQ==
+"@devcycle/js-client-sdk@1.13.10", "@devcycle/js-client-sdk@^1.13.10":
+  version "1.13.10"
+  resolved "https://registry.yarnpkg.com/@devcycle/js-client-sdk/-/js-client-sdk-1.13.10.tgz#442763c48282bd4ee78246784582ace6e06767fc"
+  integrity sha512-4n8KR00vq6jNm8xBt8LxpoJ9t4yXW7t8q+7e3DrsSNUcIMYdiuC7JiJnETqZ08frU8B7gh0jIcZGDO1307zdUA==
   dependencies:
-    "@devcycle/types" "1.1.3"
-    "@nestjs/class-validator" "^0.13.4"
-    axios "^0.27.2"
+    "@devcycle/types" "1.1.16"
+    "@nestjs/class-validator" "0.13.4"
+    axios "^1.0.0"
     axios-retry "^3.3.1"
     class-transformer "0.5.1"
-    iso-639-1 "^2.1.13"
+    iso-639-1 "2.1.13"
     lodash "^4.17.21"
-    reflect-metadata "^0.1.13"
+    reflect-metadata "0.1.13"
     ua-parser-js "^1.0.2"
     uuid "^8.3.2"
 
-"@devcycle/devcycle-react-sdk@1.9.4":
-  version "1.9.4"
-  resolved "https://registry.yarnpkg.com/@devcycle/devcycle-react-sdk/-/devcycle-react-sdk-1.9.4.tgz#65c355b96134d508beff5bf6271a2d1977679c12"
-  integrity sha512-d2YDW7TtZn+wxq2Qxr8fIQoMGqEvlOLj5DapeQ79sl3AXrGiDgNY5tbVcgR/uDcapqcGSdH3Hc6aOoIq+7LAFw==
+"@devcycle/react-client-sdk@^1.11.11":
+  version "1.11.11"
+  resolved "https://registry.yarnpkg.com/@devcycle/react-client-sdk/-/react-client-sdk-1.11.11.tgz#d682301b74aa5c298ea1a7967a0469906afc9913"
+  integrity sha512-3hN6Zfx/7v/5LFsgC8CIK4V/2hsjue9C4M0f4Rl1h4lGH49hPCLDawPtYCBeRZETFkUPbqIKxa2D9dAa/BVMLg==
   dependencies:
-    "@devcycle/devcycle-js-sdk" "1.11.1"
-    "@devcycle/types" "1.1.3"
+    "@devcycle/js-client-sdk" "1.13.10"
+    "@devcycle/types" "1.1.16"
     hoist-non-react-statics "^3.3.2"
 
-"@devcycle/types@1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@devcycle/types/-/types-1.1.3.tgz#222514b47ec457d89db4312814cb0a1120fe064f"
-  integrity sha512-QQZXtqEJzklow2SR9JT7kLb4A82NnAuFwz2mUJUbBP3ZUHtwE7SF6quJK6Wp4y1aB07w37RT26hRwyN28W3sdw==
+"@devcycle/types@1.1.16":
+  version "1.1.16"
+  resolved "https://registry.yarnpkg.com/@devcycle/types/-/types-1.1.16.tgz#ed8121fb4239821cb45f8b5914563d7e1ff6869c"
+  integrity sha512-lDhtVWoulS86XhgiCrFtXguoVuDcu7g7hJY+ZFKAF294fKzedbV7FkFhs0J7rWghEwF7o/rTMplCGYGwoUDVmQ==
   dependencies:
-    "@nestjs/class-validator" "^0.13.4"
-    "@types/validator" "13.7.6"
+    "@nestjs/class-validator" "0.13.4"
     class-transformer "0.5.1"
-    iso-639-1 "^2.1.13"
-    lodash "^4.17.21"
-    reflect-metadata "^0.1.13"
+    iso-639-1 "2.1.13"
+    lodash "4.17.21"
+    reflect-metadata "0.1.13"
 
-"@nestjs/class-validator@^0.13.4":
+"@nestjs/class-validator@0.13.4":
   version "0.13.4"
   resolved "https://registry.yarnpkg.com/@nestjs/class-validator/-/class-validator-0.13.4.tgz#6dc574681cecad2eadd749489999739992fb781f"
   integrity sha512-/mqZL36LJ5uV5WDhi87Cd52IssuO+SStaOr2+6sBsvCCGUWkoJes4Wwzmm3m/gdHH+tsNxX60sVSzYcU6hAy9Q==
   dependencies:
     libphonenumber-js "^1.9.43"
     validator "^13.7.0"
-
-"@types/validator@13.7.6":
-  version "13.7.6"
-  resolved "https://registry.yarnpkg.com/@types/validator/-/validator-13.7.6.tgz#631f1acd15cbac9cb0a114da7e87575f1c95b46a"
-  integrity sha512-uBsnWETsUagQ0n6G2wcXNIufpTNJir0zqzG4p62fhnwzs48d/iuOWEEo0d3iUxN7D+9R/8CSvWGKS+KmaD0mWA==
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -72,13 +66,14 @@ axios-retry@^3.3.1:
     "@babel/runtime" "^7.15.4"
     is-retry-allowed "^2.2.0"
 
-axios@^0.27.2:
-  version "0.27.2"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
-  integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
+axios@^1.0.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.0.tgz#f1e5292f26b2fd5c2e66876adc5b06cdbd7d2102"
+  integrity sha512-EZ1DYihju9pwVB+jg67ogm+Tmqc6JmhamRN6I4Zt8DfZu5lbcQGw3ozH9lFejSJgs/ibaef3A9PMXPLeefFGJg==
   dependencies:
-    follow-redirects "^1.14.9"
+    follow-redirects "^1.15.0"
     form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
 
 class-transformer@0.5.1:
   version "0.5.1"
@@ -97,10 +92,10 @@ delayed-stream@~1.0.0:
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
 
-follow-redirects@^1.14.9:
-  version "1.15.2"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
-  integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
+follow-redirects@^1.15.0:
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.3.tgz#fe2f3ef2690afce7e82ed0b44db08165b207123a"
+  integrity sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==
 
 form-data@^4.0.0:
   version "4.0.0"
@@ -123,17 +118,17 @@ is-retry-allowed@^2.2.0:
   resolved "https://registry.yarnpkg.com/is-retry-allowed/-/is-retry-allowed-2.2.0.tgz#88f34cbd236e043e71b6932d09b0c65fb7b4d71d"
   integrity sha512-XVm7LOeLpTW4jV19QSH38vkswxoLud8sQ57YwJVTPWdiaI9I8keEhGFpBlslyVsgdQy4Opg8QOLb8YRgsyZiQg==
 
-iso-639-1@^2.1.13:
-  version "2.1.15"
-  resolved "https://registry.yarnpkg.com/iso-639-1/-/iso-639-1-2.1.15.tgz#20cf78a4f691aeb802c16f17a6bad7d99271e85d"
-  integrity sha512-7c7mBznZu2ktfvyT582E2msM+Udc1EjOyhVRE/0ZsjD9LBtWSm23h3PtiRh2a35XoUsTQQjJXaJzuLjXsOdFDg==
+iso-639-1@2.1.13:
+  version "2.1.13"
+  resolved "https://registry.yarnpkg.com/iso-639-1/-/iso-639-1-2.1.13.tgz#bfca6c6b49be6f92815f1985e892d497770ea1dc"
+  integrity sha512-stYt3u6OnVDNcK4IWARGXmTOOY5Wa5g4bUmBsttZp/55ZiEjDUibR3C59ZnorKoSS0tfJmFuGMST3ksnY1zu7Q==
 
 libphonenumber-js@^1.9.43:
   version "1.10.34"
   resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.10.34.tgz#63374bb988688ac28b03ed6c4b344d412199d56c"
   integrity sha512-p6g4NaQH4gK1gre32+kV14Mk6GPo2EDcPDvjbi+D2ycsPFsN4gVWNbs0itdHLZqByg6YEK8mE7OeP200I/ScTQ==
 
-lodash@^4.17.21:
+lodash@4.17.21, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -150,12 +145,17 @@ mime-types@^2.1.12:
   dependencies:
     mime-db "1.52.0"
 
+proxy-from-env@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
+  integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
+
 react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-reflect-metadata@^0.1.13:
+reflect-metadata@0.1.13:
   version "0.1.13"
   resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.13.tgz#67ae3ca57c972a2aa1642b10fe363fe32d49dc08"
   integrity sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==

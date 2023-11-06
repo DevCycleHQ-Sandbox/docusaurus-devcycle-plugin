@@ -1,6 +1,6 @@
 {
     "name": "@devcycle/docusaurus-plugin",
-    "version": "0.0.0-rc.6",
+    "version": "0.0.0-rc.7",
     "description": "A plugin that easily integrates DevCycle feature flags with Docusaurus",
     "main": "src/index.js",
     "scripts": {
@@ -10,8 +10,8 @@
     "license": "MIT",
     "author": "DevCycle",
     "dependencies": {
-        "@devcycle/devcycle-react-sdk": "1.9.4",
-        "@devcycle/devcycle-js-sdk": "1.11.1"
+        "@devcycle/react-client-sdk": "^1.11.11",
+        "@devcycle/js-client-sdk": "^1.13.10"
     },
     "files": [
         "src"
